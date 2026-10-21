@@ -1,0 +1,19 @@
+{
+  "name": "biblioteca-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "check": "tsc --noEmit",
+    "test": "npm run build && node --test test/api.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=22.6"
+  }
+}
